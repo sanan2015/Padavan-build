@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: PSG1218 #NEWIFI-MINI MI-MINI MI-3 OYE-001 YK-L1 JCG-AC836M 5K-W20
+        TNAME: "PSG1218" #NEWIFI-MINI MI-MINI MI-3 OYE-001 YK-L1 JCG-AC836M 5K-W20
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
